@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 420px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 36px 32px 28px 32px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.13);
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: #2d3a4b;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    text-align: center;
+    color: #4a6073;
+    font-size: 1.2rem;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+form {
+    margin-top: 18px;
+}
+
+form div {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    color: #4a6073;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+input[type="url"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #bfc9d1;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f8fafc;
+    transition: border 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+input[type="url"]:focus,
+input[type="text"]:focus {
+    border: 1.5px solid #4a90e2;
+    box-shadow: 0 0 0 2px #e3f0fc;
+    background: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 13px 0;
+    background: linear-gradient(90deg, #4a90e2 0%, #50e3c2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(80, 227, 194, 0.08);
+    transition: background 0.2s, transform 0.1s;
+    letter-spacing: 0.5px;
+}
+
+button:hover,
+button:focus {
+    background: linear-gradient(90deg, #357ab7 0%, #38cfa7 100%);
+    transform: translateY(-2px) scale(1.02);
+}
+
+#shortened-urls {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#shortened-urls li {
+    background: linear-gradient(90deg, #f8fafc 0%, #e0eafc 100%);
+    margin: 8px 0;
+    padding: 13px 16px;
+    border-radius: 7px;
+    word-break: break-all;
+    color: #2d3a4b;
+    font-size: 1rem;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+#shortened-urls li:hover {
+    background: linear-gradient(90deg, #e3f0fc 0%, #cfdef3 100%);
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.13);
+}
+
+::-webkit-input-placeholder {
+    color: #bfc9d1;
+}
+
+::-moz-placeholder {
+    color: #bfc9d1;
+}
+
+:-ms-input-placeholder {
+    color: #bfc9d1;
+}
+
+::placeholder {
+    color: #bfc9d1;
+}
